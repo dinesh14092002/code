@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="parent">
+        <div class="subparent" id="formid" style="display: block;">
+            <img src="image/interface.JPG" alt="" class="img-con">
+            <input type="button" value="enter" class="ent-btn" onclick="showgrid();">
+        </div>
+        <div class="subparent" id="tableid" style="display: none;">
+            <h3>Body Mass Index calculator</h3>
+            <p class="para">enter your height:<input type="text" id="height" />
+                <select type="multiple" id="heightunits" class="get">
+                    <option value="metres" selected="selected">metres</option>
+                    <option value="inches">inches</option>
+                </select>
+            </p>
+            <p class="para">enter your weight:<input type="text" id="weight" />
+                <select type="multiple" id="weightunits" class="get">
+                    <option value="kg" selected="selected">kilograms</option>
+                    <option value="lb">pounds</option>
+                </select>
+            </p>
+            <input type="submit" class="check-btn" value="check" onclick="computeBMI();">
+            <h3 class="head">your BMI is: <span id="output"></span></h3>
+            <h3 class="head">This means you are: <span id="comment"></span></h3>
+            <script src="javascript/java.js"></script>
+        </div>
+
+    </div>
+</body>
+
+</html>
